@@ -390,7 +390,9 @@ html[data-theme="dark"] #animation .animation-stage{
 .header-inner{width:100%;box-sizing:border-box;padding-left:3%;padding-right:3%}
 .header-measure{width:calc(100% + 6%);margin-left:-3%;margin-right:-3%;text-align:center;box-sizing:border-box}
 .header-title{margin:0;line-height:0;user-select:none}
-.header-text{font-family:"Angkor",var(--font-sans);font-weight:400;display:inline-block;white-space:nowrap;letter-spacing:-.06em;user-select:text;line-height:1;font-size:20vw}
+.header-text{font-family:"Angkor",var(--font-sans);font-weight:400;display:inline-flex;flex-direction:column;align-items:center;letter-spacing:-.06em;user-select:text;line-height:1;font-size:20vw;gap:0.05em}
+.header-text__word{display:block}
+@media (min-width: 768px){.header-text{flex-direction:row;gap:0.12em}}
 #header.section{outline:none!important}
 #header .header-fill{position:relative}
 
