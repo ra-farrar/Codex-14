@@ -382,25 +382,71 @@ function mountExperienceDemo() {
   const textEl = document.getElementById('headerText');
   if (!measureEl || !textEl) return;
 
-  textEl.style.whiteSpace = 'nowrap';
-  textEl.style.display = 'inline-block';
-  textEl.style.width = 'auto';
+  const words = Array.from(textEl.querySelectorAll('.header-text__word'));
+  if (words.length === 0) return;
 
   function targetWidth() { return measureEl.clientWidth; }
+
+  function fitWord(word, maxWidth) {
+    word.style.fontSize = '50px';
+    word.style.display = 'inline-block';
+    word.style.whiteSpace = 'nowrap';
+    word.style.width = 'auto';
+
+    let low = 6, high = 2400;
+    for (let i = 0; i < 22; i++) {
+      const mid = (low + high) / 2;
+      word.style.fontSize = mid + 'px';
+      const w = word.scrollWidth;
+      if (w > maxWidth) high = mid; else low = mid;
+    }
+
+    word.style.fontSize = (low - 0.5) + 'px';
+    word.style.display = 'block';
+    word.style.whiteSpace = '';
+    word.style.width = '100%';
+  }
 
   function fit() {
     const maxW = targetWidth();
     if (maxW <= 0) return;
 
-    textEl.style.fontSize = '50px';
-    let low = 6, high = 2400;
-    for (let i = 0; i < 22; i++) {
-      const mid = (low + high) / 2;
-      textEl.style.fontSize = mid + 'px';
-      const w = textEl.scrollWidth;
-      if (w > maxW) high = mid; else low = mid;
+    const viewport = document.body ? document.body.getAttribute('data-viewport') : '';
+    if (viewport === 'mobile') {
+      textEl.style.whiteSpace = '';
+      textEl.style.display = '';
+      textEl.style.width = '';
+      textEl.style.fontSize = '';
+
+      words.forEach(word => {
+        word.style.fontSize = '';
+        word.style.display = '';
+        word.style.whiteSpace = '';
+        word.style.width = '';
+        fitWord(word, maxW);
+      });
+    } else {
+      words.forEach(word => {
+        word.style.fontSize = '';
+        word.style.display = '';
+        word.style.whiteSpace = '';
+        word.style.width = '';
+      });
+
+      textEl.style.whiteSpace = 'nowrap';
+      textEl.style.display = 'inline-block';
+      textEl.style.width = 'auto';
+
+      textEl.style.fontSize = '50px';
+      let low = 6, high = 2400;
+      for (let i = 0; i < 22; i++) {
+        const mid = (low + high) / 2;
+        textEl.style.fontSize = mid + 'px';
+        const w = textEl.scrollWidth;
+        if (w > maxW) high = mid; else low = mid;
+      }
+      textEl.style.fontSize = (low - 0.5) + 'px';
     }
-    textEl.style.fontSize = (low - 0.5) + 'px';
   }
 
   if ('ResizeObserver' in window) {
@@ -409,6 +455,8 @@ function mountExperienceDemo() {
   } else {
     window.addEventListener('resize', fit, { passive: true });
   }
+
+  document.addEventListener('viewportchange', fit, { passive: true });
 
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(fit);
