@@ -479,10 +479,26 @@ html[data-theme="auto"] *::-moz-selection{color:#FD3938}
 
 /* Mobile */
 @media (max-width: 767px) {
-  #subhead { padding-right: clamp(12px, 4vw, 20px); }
-  #subhead .subhead-row { gap: 0; column-gap: 0; }
-  #subhead .subhead-arrow { font-size: clamp(42px, 14vw, 96px); align-items: center; }
-  #subhead .subhead-box { flex-basis: 47%; justify-content: flex-end; gap: clamp(1px, 0.3vw, 3px); }
+  #subhead {
+    padding-right: clamp(12px, 4vw, 20px);
+    padding-left: clamp(12px, 4vw, 20px);
+    justify-content: flex-start;
+  }
+  #subhead .subhead-row {
+    gap: 0;
+    column-gap: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #subhead .subhead-arrow {
+    font-size: clamp(42px, 14vw, 96px);
+    align-items: center;
+  }
+  #subhead .subhead-box {
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    gap: clamp(1px, 0.3vw, 3px);
+  }
 }
 
 /* ===== Subhead arrow — unified ◓ cursor (color by theme) ===== */
