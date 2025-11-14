@@ -35,6 +35,46 @@
   }, { passive: true });
 })();
 
+// ========== Viewport Mode Detection ==========
+const VIEWPORT_BREAKPOINTS = {
+  tablet: 768,
+  desktop: 1024,
+  largeDesktop: 1440
+};
+
+let currentViewportMode = '';
+
+function resolveViewportMode(width) {
+  if (width >= VIEWPORT_BREAKPOINTS.largeDesktop) return 'large-desktop';
+  if (width >= VIEWPORT_BREAKPOINTS.desktop) return 'desktop';
+  if (width >= VIEWPORT_BREAKPOINTS.tablet) return 'tablet';
+  return 'mobile';
+}
+
+function applyViewportMode(mode) {
+  if (!mode || mode === currentViewportMode) return;
+  currentViewportMode = mode;
+  if (document.body) {
+    document.body.setAttribute('data-viewport', mode);
+  }
+  document.dispatchEvent(new CustomEvent('viewportchange', { detail: { viewport: mode } }));
+}
+
+function refreshViewportMode() {
+  if (!document.body) return;
+  const width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  applyViewportMode(resolveViewportMode(width));
+}
+
+window.addEventListener('resize', refreshViewportMode, { passive: true });
+window.addEventListener('orientationchange', refreshViewportMode, { passive: true });
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', refreshViewportMode, { once: true });
+}
+
+refreshViewportMode();
+
 // ========== Theme Handling (Light/Dark toggle only) ==========
 const root = document.documentElement;
 const toggle = document.getElementById('themeToggle');
