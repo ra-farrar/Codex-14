@@ -428,7 +428,7 @@ html[data-theme="auto"] *::-moz-selection{color:#FD3938}
   height: 100%;
 }
 #subhead .subhead-arrow {
-  color: #001EFF;
+  color: #002EF5;
   user-select: none;
   -webkit-user-select: none;
   display: inline-flex;
