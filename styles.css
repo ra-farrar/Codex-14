@@ -491,7 +491,7 @@ html[data-theme="auto"] *::-moz-selection{color:#FD3938}
     gap: 0;
     column-gap: 0;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-end;
   }
   #subhead .subhead-arrow {
     align-items: center;
@@ -501,7 +501,7 @@ html[data-theme="auto"] *::-moz-selection{color:#FD3938}
   }
   #subhead .subhead-box {
     flex: 1 1 auto;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: clamp(1px, 0.3vw, 3px);
   }
 }
