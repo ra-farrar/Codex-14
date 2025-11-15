@@ -41,6 +41,31 @@
   --marquee-speed-s: 18s;
 }
 
+.experience-entry {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.experience-entry__company {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.experience-entry__role,
+.experience-entry__dates,
+.experience-entry__summary {
+  font-family: 'Inter Tight', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.experience-entry__dates {
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   :root {
     --page-padding-inline: clamp(24px, 5vw, 48px);
