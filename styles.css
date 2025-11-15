@@ -340,6 +340,7 @@ html[data-theme="dark"] .btn--primary:hover {
 
 /* Custom code mount */
 .custom-mount{border:1px dashed var(--border);border-radius:10px;padding:16px;min-height:120px}
+.experience-stack{display:flex;flex-direction:column;gap:clamp(16px,3vw,24px)}
 
 /* ======== Animation ======== */
 #animation .animation-shell{
