@@ -369,10 +369,12 @@ function mountExperienceDemo() {
   const el = document.getElementById('experienceMount');
   if (!el) return;
   el.innerHTML = `
-    <ul style="margin:0; padding-left: 18px;">
-      <li>Place your experience module here</li>
-      <li>Swap this list for a timeline, cards, etc.</li>
-    </ul>
+    <div class="experience-entry">
+      <div class="experience-entry__company">AMAZON</div>
+      <div class="experience-entry__role">Senior Product Marketing Manager, US Prime Paid Media</div>
+      <div class="experience-entry__dates">2023 - Present</div>
+      <div class="experience-entry__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </div>
   `;
 }
 
