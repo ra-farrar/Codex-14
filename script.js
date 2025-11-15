@@ -370,9 +370,9 @@ function mountExperienceDemo() {
   if (!el) return;
   el.innerHTML = `
     <div class="experience-entry">
-      <div class="experience-entry__company">AMAZON</div>
-      <div class="experience-entry__role">Senior Product Marketing Manager, US Prime Paid Media</div>
-      <div class="experience-entry__dates">2023 - Present</div>
+      <div class="experience-entry__company company">AMAZON</div>
+      <div class="experience-entry__title title">Senior Product Marketing Manager, US Prime Paid Media</div>
+      <div class="experience-entry__date date">2023 - Present</div>
       <div class="experience-entry__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
     </div>
   `;
