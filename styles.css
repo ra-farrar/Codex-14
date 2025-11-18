@@ -386,9 +386,10 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-item {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(100px, 150px) 26px minmax(0, 1fr);
-  gap: clamp(10px, 3vw, 18px);
-  padding: clamp(12px, 3vw, 18px) 0;
+  grid-template-columns: minmax(0, max-content) 18px minmax(0, 1fr);
+  column-gap: clamp(6px, 2vw, 12px);
+  row-gap: 4px;
+  padding: clamp(10px, 2.5vw, 16px) 0;
 }
 
 .timeline-axis {
@@ -424,10 +425,15 @@ html[data-theme="dark"] .btn--primary:hover {
 }
 
 .timeline-date {
-  font-size: var(--size-sm);
-  letter-spacing: 0.08em;
+  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  letter-spacing: 0.12em;
   color: var(--fg-muted);
   text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.timeline-date__line {
+  display: block;
 }
 
 .timeline-role {
