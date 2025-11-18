@@ -360,6 +360,111 @@ html[data-theme="dark"] .btn--primary:hover {
 .custom-mount{border:1px dashed var(--border);border-radius:10px;padding:0;min-height:120px}
 .experience-stack{display:flex;flex-direction:column;gap:clamp(16px,3vw,24px)}
 
+/* ======== Mobile Timeline ======== */
+#timeline { display: block; }
+
+.section--timeline {
+  --section-bg: var(--elev);
+  --section-border: 1px solid var(--border);
+  padding: 0;
+}
+
+.timeline-inner {
+  padding: clamp(18px, 4vw, 28px);
+}
+
+.timeline-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(12px, 3vw, 20px);
+}
+
+.timeline-label {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: var(--size-sm);
+  font-weight: 700;
+  font-family: 'Space Mono', monospace;
+}
+
+.timeline-accent {
+  width: 38px;
+  height: 12px;
+  border-radius: 999px;
+  background: #fd3938;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 18px;
+  position: relative;
+}
+
+.timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  bottom: 2px;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(110px, 130px) 1fr;
+  gap: 16px;
+  padding: clamp(12px, 3vw, 18px) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: clamp(18px, 3vw, 22px);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #fd3938;
+  box-shadow: 0 0 0 3px var(--elev);
+}
+
+.timeline-date {
+  font-family: 'Space Mono', monospace;
+  font-size: var(--size-sm);
+  letter-spacing: 0.05em;
+  color: var(--fg-muted);
+}
+
+.timeline-role {
+  font-weight: 600;
+  font-size: var(--size-md);
+  line-height: 1.4;
+}
+
+.timeline-company {
+  font-size: var(--size-sm);
+  color: var(--fg-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+@media (min-width: 768px) {
+  #timeline {
+    display: none;
+  }
+}
+
 /* ======== Animation ======== */
 #animation .animation-shell{
   border:none;
