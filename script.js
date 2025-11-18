@@ -386,7 +386,9 @@ function mountExperienceDemo() {
       <div class="custom-mount">
         <div class="experience-entry">
           <div class="experience-entry__company company">THE WALL STREET JOURNAL</div>
-          <div class="experience-entry__title title">Product &amp; Brand Marketing Manager</div>
+          <div class="experience-entry__title title">
+            Product &amp; Brand<wbr> <span class="no-wrap">Marketing Manager</span>
+          </div>
           <div class="experience-entry__date date">2020 - 2022</div>
           <div class="experience-entry__summary">MORE ➤</div>
           <div class="experience-entry__title title">Growth Marketing Manager</div>
@@ -397,7 +399,9 @@ function mountExperienceDemo() {
       <div class="custom-mount">
         <div class="experience-entry">
           <div class="experience-entry__company company">THOMAS</div>
-          <div class="experience-entry__title title">Team Lead, Digital Marketing Strategy</div>
+          <div class="experience-entry__title title">
+            Team Lead,<wbr> <span class="no-wrap">Digital Marketing Strategy</span>
+          </div>
           <div class="experience-entry__date date">2018 - 2019</div>
           <div class="experience-entry__summary">MORE ➤</div>
           <div class="experience-entry__title title">Digital Marketing Strategist</div>
