@@ -372,6 +372,7 @@ html[data-theme="dark"] .btn--primary:hover {
 .section--timeline {
   --section-bg: var(--elev);
   --section-border: 1px solid var(--border);
+  --timeline-date-col: clamp(58px, 18vw, 86px);
   --timeline-date-col: clamp(72px, 24vw, 110px);
   --timeline-date-col: clamp(90px, 28vw, 140px);
   --timeline-axis-col: 24px;
