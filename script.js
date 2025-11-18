@@ -392,6 +392,20 @@ function mountExperienceDemo() {
           <div class="experience-entry__summary">MORE ➤</div>
         </div>
       </div>
+      <div class="custom-mount">
+        <div class="experience-entry">
+          <div class="experience-entry__company company">THOMAS</div>
+          <div class="experience-entry__title title">Team Lead, Digital Marketing Strategy</div>
+          <div class="experience-entry__date date">2018 - 2019</div>
+          <div class="experience-entry__summary">MORE ➤</div>
+          <div class="experience-entry__title title">Digital Marketing Strategist</div>
+          <div class="experience-entry__date date">2016 - 2018</div>
+          <div class="experience-entry__summary">MORE ➤</div>
+          <div class="experience-entry__title title">Junior Digital Marketing Strategist</div>
+          <div class="experience-entry__date date">2015 - 2016</div>
+          <div class="experience-entry__summary">MORE ➤</div>
+        </div>
+      </div>
     </div>
   `;
 }
