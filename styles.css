@@ -408,7 +408,9 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-column--date {
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
   text-align: left;
+  padding-inline: var(--timeline-date-pad, clamp(4px, 1vw, 8px));
 }
 
 .timeline-column--axis {
@@ -456,6 +458,8 @@ html[data-theme="dark"] .btn--primary:hover {
   color: var(--fg-muted);
   text-transform: none;
   line-height: 1.1;
+  text-align: left;
+  width: 100%;
 }
 
 .timeline-date__line {
