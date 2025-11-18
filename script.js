@@ -408,6 +408,17 @@ function mountExperienceDemo() {
           <div class="experience-entry__summary">MORE ➤</div>
         </div>
       </div>
+      <div class="custom-mount">
+        <div class="experience-entry">
+          <div class="experience-entry__company company">EARLY CAREER</div>
+          <div class="experience-entry__title title">Editorial Content Analyst</div>
+          <div class="experience-entry__date date">Thomas | 2013 - 2015</div>
+          <div class="experience-entry__summary">MORE ➤</div>
+          <div class="experience-entry__title title">Copywriter</div>
+          <div class="experience-entry__date date">Trusty Tails Pet Care | 2013 - 2015</div>
+          <div class="experience-entry__summary">MORE ➤</div>
+        </div>
+      </div>
     </div>
   `;
 }
