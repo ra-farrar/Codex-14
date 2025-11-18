@@ -195,6 +195,9 @@ html[data-debug="1"] #experience .experience-entry { outline:2px dashed rgba(var
 html[data-debug="1"] #timeline .timeline-inner { outline:2px dashed rgba(var(--ol-green),.9); }
 html[data-debug="1"] #timeline .timeline-list { outline:2px dashed rgba(var(--ol-purple),.9); }
 html[data-debug="1"] #timeline .timeline-item { outline:2px dashed rgba(var(--ol-orange),.9); outline-offset: 4px; }
+html[data-debug="1"] #timeline .timeline-column--date { outline:2px dashed rgba(var(--ol-green),.75); }
+html[data-debug="1"] #timeline .timeline-column--axis { outline:2px dashed rgba(var(--ol-purple),.75); }
+html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(var(--ol-orange),.75); }
 
 /* Shared sections */
 .section--box{border:var(--section-border,0)}
@@ -414,6 +417,7 @@ html[data-theme="dark"] .btn--primary:hover {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  width: 100%;
   height: 100%;
 }
 
