@@ -428,7 +428,7 @@ html[data-theme="dark"] .btn--primary:hover {
   font-size: clamp(0.7rem, 1.1vw, 0.85rem);
   letter-spacing: 0.12em;
   color: var(--fg-muted);
-  text-transform: uppercase;
+  text-transform: none;
   line-height: 1.1;
 }
 

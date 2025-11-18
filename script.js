@@ -374,7 +374,7 @@ function mountExperienceDemo() {
         <div class="experience-entry">
           <div class="experience-entry__company company">AMAZON</div>
           <div class="experience-entry__title title">Senior Product Marketing Manager, US Prime Paid Media</div>
-          <div class="experience-entry__date date">2023 - Present</div>
+          <div class="experience-entry__date date">2023 - Current</div>
           <div class="experience-entry__title title">Product Marketing Manager, US Prime Paid Media</div>
           <div class="experience-entry__date date">2023 - 2024</div>
           <div class="experience-entry__summary">MORE ➤</div>
