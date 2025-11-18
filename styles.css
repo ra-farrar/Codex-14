@@ -46,8 +46,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  max-width: 640px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
 }
 
 .experience-entry__company {
@@ -83,6 +83,11 @@
 @media (min-width: 768px) {
   :root {
     --page-padding-inline: clamp(24px, 5vw, 48px);
+  }
+
+  .experience-entry {
+    max-width: 640px;
+    margin: 0 auto;
   }
 }
 
