@@ -373,6 +373,8 @@ html[data-theme="dark"] .btn--primary:hover {
   --section-bg: var(--elev);
   --section-border: 1px solid var(--border);
   --timeline-date-col: clamp(58px, 18vw, 86px);
+  --timeline-date-col: clamp(72px, 24vw, 110px);
+  --timeline-date-col: clamp(90px, 28vw, 140px);
   --timeline-axis-col: 24px;
   padding: 0;
   font-family: 'Inter Tight', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
@@ -405,6 +407,7 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-column--date {
   display: flex;
   justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .timeline-column--axis {
