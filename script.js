@@ -376,8 +376,8 @@ function mountExperienceDemo() {
           <div class="experience-entry__title title">Senior Product Marketing Manager, US Prime Paid Media</div>
           <div class="experience-entry__date date">2023 - Present</div>
           <div class="experience-entry__title title">Product Marketing Manager, US Prime Paid Media</div>
-          <div class="experience-entry__date date">2022 - 2023</div>
-          <div class="experience-entry__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="experience-entry__date date">2023 - 2024</div>
+          <div class="experience-entry__summary">MORE ➤</div>
           <div class="experience-entry__title title">Product Marketing Manager, Prime Access</div>
           <div class="experience-entry__date date">2022 - 2023</div>
         </div>
@@ -388,8 +388,8 @@ function mountExperienceDemo() {
           <div class="experience-entry__title title">Senior Product Marketing Manager, US Prime Paid Media</div>
           <div class="experience-entry__date date">2023 - Present</div>
           <div class="experience-entry__title title">Product Marketing Manager, US Prime Paid Media</div>
-          <div class="experience-entry__date date">2022 - 2023</div>
-          <div class="experience-entry__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="experience-entry__date date">2023 - 2024</div>
+          <div class="experience-entry__summary">MORE ➤</div>
         </div>
       </div>
     </div>
