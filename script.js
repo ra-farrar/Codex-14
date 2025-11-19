@@ -75,6 +75,47 @@ if (document.readyState === 'loading') {
 
 refreshViewportMode();
 
+// ========== Timeline date width sync ==========
+(function () {
+  const TIMELINE_SELECTOR = '.section--timeline';
+  const FIRST_DATE_SELECTOR = '.timeline-item:first-child .timeline-column--date';
+  let rafId = 0;
+
+  function measureAndApply() {
+    rafId = 0;
+    const timeline = document.querySelector(TIMELINE_SELECTOR);
+    if (!timeline) return;
+    const firstDateColumn = timeline.querySelector(FIRST_DATE_SELECTOR);
+    if (!firstDateColumn) return;
+    const width = firstDateColumn.getBoundingClientRect().width;
+    if (!width) {
+      timeline.style.removeProperty('--timeline-date-col');
+      return;
+    }
+    timeline.style.setProperty('--timeline-date-col', `${width}px`);
+  }
+
+  function scheduleMeasurement() {
+    if (rafId) return;
+    rafId = window.requestAnimationFrame(measureAndApply);
+  }
+
+  function initTimelineWidthSync() {
+    scheduleMeasurement();
+    window.addEventListener('resize', scheduleMeasurement, { passive: true });
+    document.addEventListener('viewportchange', scheduleMeasurement, { passive: true });
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(scheduleMeasurement).catch(() => {});
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTimelineWidthSync, { once: true });
+  } else {
+    initTimelineWidthSync();
+  }
+})();
+
 // ========== Theme Handling (Light/Dark toggle only) ==========
 const root = document.documentElement;
 const toggle = document.getElementById('themeToggle');
