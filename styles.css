@@ -440,6 +440,9 @@ html[data-theme="dark"] .btn--primary:hover {
   align-items: center;
   grid-row: 1;
   align-self: center;
+  align-items: flex-start;
+  grid-row: 1;
+  align-self: start;
 }
 
 .timeline-column--role {
@@ -453,7 +456,7 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-axis {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   height: 100%;
