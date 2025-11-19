@@ -373,15 +373,17 @@ html[data-theme="dark"] .btn--primary:hover {
 .section--timeline {
   --section-bg: var(--elev);
   --section-border: 1px solid transparent;
-  /* Keep the date column width consistent (but slightly narrower) so every entry aligns */
-  --timeline-date-col: clamp(80px, 22vw, 110px);
-  --timeline-axis-col: 24px;
+  /* Let the date column hug its content so it only occupies the space it needs */
+  --timeline-date-col: minmax(0, max-content);
+  --timeline-axis-col: 20px;
+  --timeline-role-pad: clamp(6px, 2vw, 14px);
+  --timeline-date-pad: var(--timeline-role-pad);
   padding: 0;
   font-family: 'Inter Tight', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
 }
 
 .timeline-inner {
-  padding: clamp(18px, 4vw, 28px) 0;
+  padding: clamp(18px, 4vw, 28px) clamp(6px, 1.5vw, 12px);
 }
 
 .timeline-list {
@@ -395,7 +397,7 @@ html[data-theme="dark"] .btn--primary:hover {
   position: relative;
   display: grid;
   grid-template-columns: var(--timeline-date-col) var(--timeline-axis-col) minmax(0, 1fr);
-  column-gap: clamp(6px, 2vw, 12px);
+  column-gap: clamp(4px, 1.6vw, 10px);
   row-gap: 4px;
   padding: var(--timeline-item-pad) 0;
   align-items: stretch;
@@ -416,6 +418,10 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-column--axis {
   display: flex;
   justify-content: center;
+}
+
+.timeline-column--role {
+  padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
 }
 
 .timeline-axis {
