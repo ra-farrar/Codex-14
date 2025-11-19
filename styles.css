@@ -457,6 +457,7 @@ html[data-theme="dark"] .btn--primary:hover {
   line-height: 1.1;
   text-align: left;
   width: 100%;
+  padding-top: 0.15em;
 }
 
 .timeline-date__line {
