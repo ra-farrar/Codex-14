@@ -413,7 +413,7 @@ html[data-theme="dark"] .btn--primary:hover {
   position: relative;
   display: grid;
   grid-template-columns: var(--timeline-date-col) var(--timeline-axis-col) minmax(0, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
   column-gap: var(--timeline-gap);
   row-gap: 4px;
   padding: var(--timeline-item-pad) 0;
@@ -487,9 +487,28 @@ html[data-theme="dark"] .btn--primary:hover {
   padding-top: clamp(2px, 0.6vw, 8px);
 }
 
-.timeline-role {
+.timeline-company-card {
   grid-column: 3;
   grid-row: 1;
+  padding-inline: var(--timeline-role-pad);
+  padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
+  padding-block: clamp(8px, 1.5vw, 12px);
+  background: var(--muted);
+  border-radius: 14px;
+  align-self: flex-start;
+}
+
+.timeline-company-card__name {
+  display: inline-block;
+  font-size: var(--size-lg);
+  font-weight: 700;
+  color: var(--subhead-arrow);
+  line-height: 1.35;
+}
+
+.timeline-role {
+  grid-column: 3;
+  grid-row: 2;
   padding-inline: var(--timeline-role-pad);
   padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
   font-weight: 600;
@@ -503,7 +522,7 @@ html[data-theme="dark"] .btn--primary:hover {
 
 .timeline-company {
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 3;
   padding-inline: var(--timeline-role-pad);
   padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
   font-size: var(--size-sm);
