@@ -401,7 +401,7 @@ html[data-theme="dark"] .btn--primary:hover {
   column-gap: clamp(4px, 1.6vw, 10px);
   row-gap: 4px;
   padding: var(--timeline-item-pad) 0;
-  align-items: stretch;
+  align-items: center;
 }
 
 .timeline-column {
@@ -414,6 +414,7 @@ html[data-theme="dark"] .btn--primary:hover {
   align-items: flex-start;
   text-align: left;
   padding-inline: 0 var(--timeline-date-pad);
+  align-self: center;
 }
 
 .timeline-column--axis {
@@ -429,7 +430,7 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-axis {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -456,7 +457,6 @@ html[data-theme="dark"] .btn--primary:hover {
   border-radius: 50%;
   background: var(--bg);
   box-shadow: 0 0 0 3px var(--subhead-arrow);
-  margin-top: clamp(4px, 1vw, 6px);
 }
 
 .timeline-date {
@@ -467,11 +467,14 @@ html[data-theme="dark"] .btn--primary:hover {
   line-height: 1.1;
   text-align: left;
   width: 100%;
-  padding-top: 0.15em;
 }
 
 .timeline-date__line {
   display: block;
+}
+
+.timeline-date__line:first-child {
+  padding-top: clamp(2px, 0.6vw, 8px);
 }
 
 .timeline-role {
