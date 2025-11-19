@@ -12,6 +12,7 @@
   --border: #e6e7eb;
   --accent: #0f62fe;
   --accent-contrast: #ffffff;
+  --subhead-arrow: #1600ff;
 
   /* Typographic scale */
   --size-xs: 0.8125rem;
@@ -444,8 +445,8 @@ html[data-theme="dark"] .btn--primary:hover {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #fd3938;
-  box-shadow: 0 0 0 3px var(--elev);
+  background: var(--bg);
+  box-shadow: 0 0 0 3px var(--subhead-arrow);
   margin-top: clamp(4px, 1vw, 6px);
 }
 
@@ -608,7 +609,7 @@ html[data-theme="auto"] *::-moz-selection{color:#FD3938}
   height: 100%;
 }
 #subhead .subhead-arrow {
-  color: #1600FF;
+  color: var(--subhead-arrow);
   user-select: none;
   -webkit-user-select: none;
   display: inline-flex;
