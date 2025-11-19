@@ -487,8 +487,8 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-company {
   font-size: var(--size-sm);
   color: var(--fg-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 @media (min-width: 768px) {
