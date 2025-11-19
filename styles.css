@@ -427,7 +427,7 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-column--date {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
   padding-inline: 0 var(--timeline-date-pad);
   grid-row: 1;
@@ -438,8 +438,8 @@ html[data-theme="dark"] .btn--primary:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-row: 1 / span 2;
-  align-self: stretch;
+  grid-row: 1;
+  align-self: center;
 }
 
 .timeline-column--role {
