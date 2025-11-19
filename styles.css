@@ -398,9 +398,11 @@ html[data-theme="dark"] .btn--primary:hover {
   position: relative;
   display: grid;
   grid-template-columns: var(--timeline-date-col) var(--timeline-axis-col) minmax(0, 1fr);
+  grid-template-rows: auto auto;
   column-gap: clamp(4px, 1.6vw, 10px);
   row-gap: 4px;
   padding: var(--timeline-item-pad) 0;
+  align-items: start;
   align-items: center;
 }
 
@@ -414,17 +416,23 @@ html[data-theme="dark"] .btn--primary:hover {
   align-items: flex-start;
   text-align: left;
   padding-inline: 0 var(--timeline-date-pad);
+  grid-row: 1;
   align-self: center;
 }
 
 .timeline-column--axis {
   display: flex;
   justify-content: center;
+  grid-row: 1 / span 2;
+  align-self: stretch;
 }
 
 .timeline-column--role {
-  padding-inline: var(--timeline-role-pad);
-  padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
+  display: contents;
+}
+
+.timeline-details {
+  display: contents;
 }
 
 .timeline-axis {
@@ -478,6 +486,10 @@ html[data-theme="dark"] .btn--primary:hover {
 }
 
 .timeline-role {
+  grid-column: 3;
+  grid-row: 1;
+  padding-inline: var(--timeline-role-pad);
+  padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
   font-weight: 600;
   font-size: var(--size-md);
   line-height: 1.4;
@@ -488,6 +500,10 @@ html[data-theme="dark"] .btn--primary:hover {
 }
 
 .timeline-company {
+  grid-column: 3;
+  grid-row: 2;
+  padding-inline: var(--timeline-role-pad);
+  padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
   font-size: var(--size-sm);
   color: var(--fg-muted);
   text-transform: none;
