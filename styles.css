@@ -489,7 +489,7 @@ html[data-theme="dark"] .btn--primary:hover {
 
 .timeline-company-card {
   grid-column: 3;
-  grid-row: 1;
+  grid-row: 2;
   padding-inline: var(--timeline-role-pad);
   padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
   padding-block: clamp(8px, 1.5vw, 12px);
@@ -518,6 +518,17 @@ html[data-theme="dark"] .btn--primary:hover {
 
 .timeline-role__line {
   display: block;
+}
+
+.timeline-company-label {
+  grid-column: 3;
+  grid-row: 1;
+  padding-inline: var(--timeline-role-pad);
+  padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
+  font-size: var(--size-lg);
+  font-weight: 700;
+  color: var(--subhead-arrow);
+  line-height: 1.35;
 }
 
 .timeline-company {
