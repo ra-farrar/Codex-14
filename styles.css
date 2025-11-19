@@ -371,7 +371,7 @@ html[data-theme="dark"] .btn--primary:hover {
 
 .section--timeline {
   --section-bg: var(--elev);
-  --section-border: 1px solid var(--border);
+  --section-border: 1px solid transparent;
   --timeline-date-col: max-content;
   --timeline-axis-col: 24px;
   padding: 0;
