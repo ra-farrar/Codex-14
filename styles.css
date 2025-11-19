@@ -367,6 +367,12 @@ html[data-theme="dark"] .btn--primary:hover {
 .custom-mount{border:1px dashed var(--border);border-radius:10px;padding:0;min-height:120px}
 .experience-stack{display:flex;flex-direction:column;gap:clamp(16px,3vw,24px)}
 
+/* Hide desktop sections on mobile */
+body[data-viewport="mobile"] #experience,
+body[data-viewport="mobile"] #apps {
+  display: none;
+}
+
 /* ======== Mobile Timeline ======== */
 #timeline { display: block; }
 
