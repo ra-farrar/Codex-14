@@ -411,7 +411,7 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-column--date {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   text-align: left;
   padding-inline: 0 var(--timeline-date-pad);
 }
@@ -419,9 +419,12 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-column--axis {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .timeline-column--role {
+  display: flex;
+  align-items: center;
   padding-inline: var(--timeline-role-pad);
   padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
 }
@@ -429,7 +432,7 @@ html[data-theme="dark"] .btn--primary:hover {
 .timeline-axis {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -456,7 +459,6 @@ html[data-theme="dark"] .btn--primary:hover {
   border-radius: 50%;
   background: var(--bg);
   box-shadow: 0 0 0 3px var(--subhead-arrow);
-  margin-top: clamp(4px, 1vw, 6px);
 }
 
 .timeline-date {
@@ -467,11 +469,16 @@ html[data-theme="dark"] .btn--primary:hover {
   line-height: 1.1;
   text-align: left;
   width: 100%;
-  padding-top: 0.15em;
 }
 
 .timeline-date__line {
   display: block;
+}
+
+.timeline-date,
+.timeline-axis,
+.timeline-details {
+  align-self: center;
 }
 
 .timeline-role {
