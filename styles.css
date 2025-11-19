@@ -376,6 +376,45 @@ body[data-viewport="mobile"] #apps {
 /* ======== Mobile Timeline ======== */
 #timeline { display: block; }
 
+.section--skills {
+  --section-bg: var(--elev);
+  --section-border: 1px solid transparent;
+}
+
+.skills-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 12px;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--muted);
+  color: var(--fg);
+  font-weight: 600;
+  font-size: var(--size-sm);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.skill-chip:focus-visible {
+  outline: 2px solid var(--subhead-arrow);
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  #skills {
+    display: none;
+  }
+}
+
 .section--timeline {
   --section-bg: var(--elev);
   --section-border: 1px solid transparent;
