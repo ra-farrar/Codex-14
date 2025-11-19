@@ -469,6 +469,10 @@ html[data-theme="dark"] .btn--primary:hover {
   line-height: 1.4;
 }
 
+.timeline-role__line {
+  display: block;
+}
+
 .timeline-company {
   font-size: var(--size-sm);
   color: var(--fg-muted);
