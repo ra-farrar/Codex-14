@@ -395,10 +395,10 @@ body[data-viewport="mobile"] #apps {
   padding: 10px 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: var(--muted);
-  color: var(--fg-muted);
+  background: transparent;
+  color: var(--fg);
   font-weight: 400;
-  font-size: var(--size-sm);
+  font-size: var(--size-xs);
   letter-spacing: normal;
   line-height: 1.2;
   white-space: nowrap;
