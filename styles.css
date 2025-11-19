@@ -396,10 +396,10 @@ body[data-viewport="mobile"] #apps {
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--muted);
-  color: var(--fg);
-  font-weight: 600;
+  color: var(--fg-muted);
+  font-weight: 400;
   font-size: var(--size-sm);
-  letter-spacing: 0.01em;
+  letter-spacing: normal;
   line-height: 1.2;
   white-space: nowrap;
 }
