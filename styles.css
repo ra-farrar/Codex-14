@@ -489,7 +489,7 @@ html[data-theme="dark"] .btn--primary:hover {
 
 .timeline-role {
   grid-column: 3;
-  grid-row: 1;
+  grid-row: 2;
   padding-inline: var(--timeline-role-pad);
   padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
   font-weight: 600;
@@ -501,9 +501,20 @@ html[data-theme="dark"] .btn--primary:hover {
   display: block;
 }
 
+.timeline-company-label {
+  grid-column: 3;
+  grid-row: 1;
+  padding-inline: var(--timeline-role-pad);
+  padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
+  font-size: var(--size-lg);
+  font-weight: 700;
+  color: var(--subhead-arrow);
+  line-height: 1.35;
+}
+
 .timeline-company {
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 3;
   padding-inline: var(--timeline-role-pad);
   padding-inline: var(--timeline-role-pad) calc(var(--timeline-role-pad) / 2);
   font-size: var(--size-sm);
