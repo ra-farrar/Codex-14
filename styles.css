@@ -373,8 +373,8 @@ html[data-theme="dark"] .btn--primary:hover {
 .section--timeline {
   --section-bg: var(--elev);
   --section-border: 1px solid transparent;
-  /* Keep the date column width consistent so every entry aligns */
-  --timeline-date-col: clamp(96px, 28vw, 126px);
+  /* Keep the date column width consistent (but slightly narrower) so every entry aligns */
+  --timeline-date-col: clamp(80px, 22vw, 110px);
   --timeline-axis-col: 24px;
   padding: 0;
   font-family: 'Inter Tight', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
