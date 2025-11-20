@@ -145,6 +145,7 @@ p,h1,h2,h3,h4,h5,h6{margin:0}
 /* ========== Layout ========== */
 .page{width:min(100%,var(--page-max));margin:0 auto;padding:24px var(--page-padding-inline) 64px}
 .section{background:var(--section-bg,transparent);color:var(--section-fg,var(--fg));border-radius:var(--section-radius,0px);padding:clamp(16px,3vw,28px);margin-block:clamp(10px,2vw,20px);border:var(--section-border,1px solid transparent)}
+.section--flush{padding-block:0}
 
 /* In dark mode keep surface containers transparent so the background is continuous */
 html[data-theme="dark"] .section--box,
