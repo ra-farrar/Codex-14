@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title">
-  <title>Spotify icon</title>
-  <circle cx="100" cy="100" r="96" fill="#ffffff" stroke="#000000" stroke-width="8" />
-  <path d="M60 94c30-6 56-4 80 6" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" />
-  <path d="M64 118c22-5 44-4 64 4" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" />
-  <path d="M68 142c16-4 32-3 46 3" fill="none" stroke="#000000" stroke-width="12" stroke-linecap="round" />
-</svg>
