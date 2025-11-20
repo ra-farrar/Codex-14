@@ -233,6 +233,7 @@ html[data-theme="dark"] .block-title--skills{color:#fff}
 
 /* ======== MARQUEE ======== */
 .section--marquee{padding:0}
+body[data-viewport="mobile"] .section--marquee{display:none}
 body[data-viewport="mobile"] .section--marquee{--marquee-speed-s:22s}
 body[data-viewport="tablet"] .section--marquee{--marquee-speed-s:20s}
 body[data-viewport="desktop"] .section--marquee{--marquee-speed-s:18s}
