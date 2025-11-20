@@ -882,7 +882,3 @@ html[data-debug="1"] #debugLegend { display: block; }
   }
 }
 
-/* Tighter outer padding just for the contact section */
-#contact.section {
-  padding: 0;
-}
