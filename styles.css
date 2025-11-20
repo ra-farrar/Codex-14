@@ -301,6 +301,7 @@ body[data-viewport="large-desktop"] .section--marquee{--marquee-speed-s:16s}
 
 @media (max-width: 600px) {
   .grid--contact-icons {
+    column-gap:clamp(6px, 3vw, 10px);
     column-gap:clamp(8px, 4vw, 14px);
   }
 }
@@ -319,10 +320,14 @@ body[data-viewport="large-desktop"] .section--marquee{--marquee-speed-s:16s}
 }
 
 .contact-icon {
-  width:clamp(48px, 13vw, 64px);
-  width:clamp(40px, 12vw, 56px);
-  width:clamp(36px, 11vw, 56px);
+  width:clamp(44px, 10vw, 64px);
   height:auto;
+}
+
+@media (max-width: 600px) {
+  .contact-icon {
+    width:clamp(56px, 18vw, 72px);
+  }
 }
 
 .btn--ghost:hover {
