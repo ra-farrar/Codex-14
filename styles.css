@@ -210,6 +210,9 @@ html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(
   font-size:var(--size-xl);
   color:#000;
 }
+#experience-header .block-title--skills{
+  font-size:clamp(1.15rem, 5vw, 1.75rem);
+}
 html[data-theme="dark"] .block-title--skills{color:#fff}
 @media (prefers-color-scheme: dark) {
   html[data-theme="auto"] .block-title--skills{color:#fff}
