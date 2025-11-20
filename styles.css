@@ -401,6 +401,11 @@ html[data-theme="dark"] .btn--primary:hover {
   grid-template-columns:repeat(4, auto);
 }
 
+/* Hide the standard contact buttons on mobile viewports */
+body[data-viewport="mobile"] #contact {
+  display: none;
+}
+
 /* App card */
 .app{display:block;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--elev)}
 .app img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
