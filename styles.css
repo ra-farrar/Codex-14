@@ -207,7 +207,9 @@ html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(
   font-family:"Angkor",serif;
   text-align:center;
   text-transform:uppercase;
-  font-size:var(--size-xl);
+  font-size:clamp(1.1rem, 5vw, var(--size-xl));
+  letter-spacing:-0.06em;
+  white-space: nowrap;
   color:#000;
 }
 html[data-theme="dark"] .block-title--skills{color:#fff}
