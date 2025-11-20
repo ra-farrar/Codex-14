@@ -384,15 +384,16 @@ body[data-viewport="mobile"] #apps {
 .skills-chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  row-gap: 12px;
+  justify-content: center;
+  gap: 8px;
+  row-gap: 10px;
 }
 
 .skill-chip {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 14px;
+  padding: 8px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: transparent;
