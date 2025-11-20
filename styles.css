@@ -292,6 +292,33 @@ body[data-viewport="large-desktop"] .section--marquee{--marquee-speed-s:16s}
   font-family:"Space Mono", monospace;
 }
 
+.grid--contact-icons {
+  align-items:center;
+}
+
+.contact-icon-link {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px;
+  border:2px solid var(--border);
+  border-radius:var(--radius);
+  background:var(--elev);
+  transition:transform .06s ease,border-color .2s ease,background .2s ease;
+}
+
+.contact-icon-link:hover {
+  background:var(--bg);
+  border-color:#001EFF;
+  transform:translateY(1px);
+}
+
+.contact-icon {
+  width:100%;
+  max-width:120px;
+  height:auto;
+}
+
 .btn--ghost:hover {
   background:#000000;
   color:#FD3938;
