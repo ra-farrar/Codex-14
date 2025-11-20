@@ -208,7 +208,6 @@ html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(
   text-align:center;
   text-transform:uppercase;
   font-size:clamp(1.1rem, 5vw, var(--size-xl));
-  letter-spacing:-0.06em;
   white-space: nowrap;
   color:#000;
 }
