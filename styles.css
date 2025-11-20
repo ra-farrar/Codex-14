@@ -302,6 +302,7 @@ body[data-viewport="large-desktop"] .section--marquee{--marquee-speed-s:16s}
 @media (max-width: 600px) {
   .grid--contact-icons {
     column-gap:clamp(6px, 3vw, 10px);
+    column-gap:clamp(8px, 4vw, 14px);
   }
 }
 
