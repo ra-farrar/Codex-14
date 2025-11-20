@@ -127,6 +127,18 @@ function updateFooterLogo(mode) {
   footerLogo.src = mode === 'dark' ? 'logo-white.svg' : 'logo-black.svg';
 }
 
+function updateContactIcons(mode) {
+  const icons = document.querySelectorAll('.contact-icon');
+  icons.forEach((icon) => {
+    const lightSrc = icon.dataset.lightSrc || icon.getAttribute('src');
+    const darkSrc = icon.dataset.darkSrc || lightSrc;
+    const nextSrc = mode === 'dark' ? darkSrc : lightSrc;
+    if (nextSrc && icon.getAttribute('src') !== nextSrc) {
+      icon.setAttribute('src', nextSrc);
+    }
+  });
+}
+
 // Detect system preference once (used if no saved choice)
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -134,6 +146,7 @@ function applyTheme(mode) {
   root.setAttribute('data-theme', mode);
   if (toggle) toggle.textContent = mode.charAt(0).toUpperCase() + mode.slice(1);
   updateFooterLogo(mode);
+  updateContactIcons(mode);
 }
 function getCurrentTheme() {
   const saved = localStorage.getItem(THEME_KEY);
