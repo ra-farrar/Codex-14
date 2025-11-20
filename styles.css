@@ -203,7 +203,17 @@ html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(
 /* Shared sections */
 .section--box{border:var(--section-border,0)}
 .block-title{font-weight:600;font-size:var(--size-sm);letter-spacing:.06em;text-transform:uppercase;color:var(--fg-muted);margin-bottom:10px}
-.block-title--skills{font-family:"Angkor",serif;text-align:center;text-transform:uppercase}
+.block-title--skills{
+  font-family:"Angkor",serif;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:var(--size-xl);
+  color:#000;
+}
+html[data-theme="dark"] .block-title--skills{color:#fff}
+@media (prefers-color-scheme: dark) {
+  html[data-theme="auto"] .block-title--skills{color:#fff}
+}
 
 /* Headings & Text */
 .heading--xl{font-size:clamp(1.5rem,4.5vw,var(--size-2xl));font-weight:700}
