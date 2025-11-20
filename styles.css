@@ -297,6 +297,7 @@ body[data-viewport="large-desktop"] .section--marquee{--marquee-speed-s:16s}
   grid-template-columns:repeat(4, auto);
   justify-content:center;
   column-gap:clamp(10px, 4vw, 18px);
+  column-gap:clamp(14px, 5vw, 22px);
 }
 
 .contact-icon-link {
@@ -314,6 +315,7 @@ body[data-viewport="large-desktop"] .section--marquee{--marquee-speed-s:16s}
 
 .contact-icon {
   width:clamp(40px, 12vw, 56px);
+  width:clamp(36px, 11vw, 56px);
   height:auto;
 }
 
