@@ -207,7 +207,7 @@ html[data-debug="1"] #timeline .timeline-column--role { outline:2px dashed rgba(
   font-family:"Angkor",serif;
   text-align:center;
   text-transform:uppercase;
-  font-size:clamp(1.1rem, 5vw, var(--size-xl));
+  font-size:clamp(1.35rem, 6.5vw, 2rem);
   white-space: nowrap;
   color:#000;
 }
