@@ -706,6 +706,34 @@ html[data-theme="dark"] #animation .animation-stage{
   pointer-events:none;
   user-select:none;
 }
+
+/* ======== COLLAGE (mobile full-bleed) ======== */
+.section--collage {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .section--collage {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-inline: 0;
+    width: 100vw;
+    max-width: 100vw;
+    border-radius: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  @supports (width: 100dvw) {
+    .section--collage {
+      margin-left: calc(50% - 50dvw);
+      margin-right: calc(50% - 50dvw);
+      width: 100dvw;
+      max-width: 100dvw;
+    }
+  }
+}
+
 @media (max-width:480px){
   #animation .animation-shell{padding:clamp(10px,4vw,16px);}
 }
