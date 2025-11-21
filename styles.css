@@ -672,6 +672,15 @@ html[data-theme="dark"] #animation .animation-stage{
     --shape-stroke: #ffffff;
   }
 }
+#animation {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #animation {
+    display: none;
+  }
+}
 #animation .animation-stage canvas{display:block}
 #animation .animation-overlay{
   position:absolute;
